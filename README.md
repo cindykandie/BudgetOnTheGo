@@ -1,6 +1,3 @@
-Certainly! Here's the README with money emojis:
-
-```markdown
 # 💰 Budget On The Go
 
 Budget On The Go is a simple and user-friendly mobile app for managing your finances wherever you are. It helps you keep track of your income, expenses, and budget goals.
