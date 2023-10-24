@@ -70,6 +70,3 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 Cindy Kandie - [GitHub](https://github.com/cindykandie)
 
 Project Link: [https://github.com/cindykandie/BudgetOnTheGo](https://github.com/cindykandie/BudgetOnTheGo)
-```
-
-I've added money and finance-related emojis to enhance the README's visual appeal.
