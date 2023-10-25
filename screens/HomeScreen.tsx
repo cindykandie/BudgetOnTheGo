@@ -5,8 +5,8 @@ import { View, Text, TextInput, Button } from 'react-native';
 export default function HomeScreen() {
   return (
     <View>
-      <Text>Budget On-The-Go</Text>
-      <Box>Hello world</Box>
+      <Text>OverView</Text>
+      <Box>Budget On The Go</Box>
       <TextInput
         
         placeholder="Enter Amount"
