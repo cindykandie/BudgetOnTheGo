@@ -1,6 +1,3 @@
-
-
-// TrackExpenseScreen.tsx
 import React from 'react';
 import { View } from 'react-native';
 import { Box, Text, Button } from 'native-base';
@@ -11,7 +8,7 @@ const TrackExpenseScreen: React.FC<NavigationContainerProps> = ({ navigation }) 
     <View>
       <Text>Track Expense</Text>
       <Box>
-        {/* Your expense tracking components here */}
+        {/* expense tracking components here */}
       </Box>
       <Button onPress={() => navigation.navigate('Home')}>
         Back to Home

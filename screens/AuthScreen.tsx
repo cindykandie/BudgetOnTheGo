@@ -1,24 +1,28 @@
-// AuthScreen.tsx
 import React from 'react';
 import { View } from 'react-native';
-import { Box, Text, Button } from 'native-base';
+import { Box, Text, Button, Center, Pressable, Image } from 'native-base';
 import { NavigationContainerProps } from '@react-navigation/native';
 
 const AuthScreen: React.FC<NavigationContainerProps> = ({ navigation }) => {
   return (
     <View>
-      <Text>Authentication</Text>
+        <Text fontSize="xl" textAlign="center" my="4">Authentication</Text>
+        <Image source={{
+          uri: 'https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg'
+        }} alt="Aang flying and surrounded by clouds" height="100" rounded="full" width="100" display='flex' alignSelf='center'/>
       <Box>
-        <Button
+        <Pressable
           onPress={() => navigation.navigate('Login')}
+          rounded="md" bg="primary.400" alignSelf="flex-start" m="10" px="6" py="2"
         >
-          Login
-        </Button>
-        <Button
+          <Text>Login</Text>
+        </Pressable>
+        <Pressable
           onPress={() => navigation.navigate('Signup')}
+          rounded="md" bg="primary.400" alignSelf="flex-end" m="10" px="6" py="2"
         >
-          Signup
-        </Button>
+          <Text>Sign Up</Text>
+        </Pressable>
       </Box>
     </View>
   );
@@ -26,51 +30,3 @@ const AuthScreen: React.FC<NavigationContainerProps> = ({ navigation }) => {
 
 export default AuthScreen;
 
-// LoginScreen.tsx
-// import React from 'react';
-// import { View } from 'react-native';
-// import { Box, Text, Input, Button } from 'native-base';
-// import { NavigationContainerProps } from '@react-navigation/native';
-
-// const LoginScreen: React.FC<NavigationContainerProps> = ({ navigation }) => {
-//   return (
-//     <View>
-//       <Text>Login</Text>
-//       <Box>
-//         {/* Your login components here (e.g., email, password input) */}
-//         <Input placeholder="Email" />
-//         <Input placeholder="Password" />
-//         <Button onPress={() => /* Add login logic here */}>
-//           Login
-//         </Button>
-//       </Box>
-//     </View>
-//   );
-// };
-
-// export default LoginScreen;
-
-// // SignupScreen.tsx
-// import React from 'react';
-// import { View } from 'react-native';
-// import { Box, Text, Input, Button } from 'native-base';
-// import { NavigationContainerProps } from '@react-navigation/native';
-
-// const SignupScreen: React.FC<NavigationContainerProps> = ({ navigation }) => {
-//   return (
-//     <View>
-//       <Text>Signup</Text>
-//       <Box>
-//         {/* Your signup components here (e.g., name, email, password input) */}
-//         <Input placeholder="Name" />
-//         <Input placeholder="Email" />
-//         <Input placeholder="Password" />
-//         <Button onPress={() => /* Add signup logic here */}>
-//           Signup
-//         </Button>
-//       </Box>
-//     </View>
-//   );
-// };
-
-// export default SignupScreen;

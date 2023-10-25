@@ -1,9 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Box, Text, Button, Image } from 'native-base';
-import { TouchableOpacity } from 'react-native-gesture-handler'; // Import TouchableOpacity
-
-// Import your png image
+import { Box, Text, Image } from 'native-base';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const HomeScreen: React.FC = ({ navigation }) => {
   return (
@@ -20,7 +18,7 @@ const HomeScreen: React.FC = ({ navigation }) => {
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('TrackExpense')}>
           <Image
-            source={require('../assets/budget.png')} // Import your track expense image
+            source={require('../assets/budget.png')} 
             alt="Track Expense"
             size="20" 
           />
